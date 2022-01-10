@@ -1,0 +1,89 @@
+/* #container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  /* background-image: url("./pexels-reynaldo-brigworkz-brigantty-771883\ \(1\).jpg");
+  color: rgb(249, 250, 255); */
+/* margin: 0 0 0 0; */
+/* } */
+#time {
+  width: 20vw;
+  height: 10vh;
+  position: relative;
+  margin: 25px 0 0 200px;
+  font-size: 2rem;
+
+  font-weight: bold;
+  /* color: indianred; */
+}
+
+#city {
+  width: 70vw;
+  height: 10vh;
+  margin: 10vh 15vw 10px 15vw;
+  text-align: center;
+  text-shadow: 5px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+#averageTemp {
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  height: 10vh;
+  font-size: 2rem;
+}
+
+#maxTemp,
+#minTemp,
+#temps {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  padding: 0 10vw 0 10vw;
+}
+
+input {
+  width: 40vw;
+  height: 5vh;
+  border: 10px;
+  font-size: large;
+  /* background-color: antiquewhite; */
+  text-align: center;
+  margin-left: 20vw;
+}
+#clear {
+  margin-right: 10vw;
+}
+button {
+  width: auto;
+  height: 5vh;
+  background-color: darkred;
+}
+
+/* .datTime {
+  background-image: url("./day.jpg");
+  color: rgb(8, 23, 233);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: 0 0 0 0;
+} */
+.nightTime {
+  background-image: url("./pexels-francesco-ungaro-998641.jpg");
+  color: crimson;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: 0 0 0 0;
+}
+.eveningTime {
+  background-image: url("./Evening-Wishes.jpg");
+  color: rgb(249, 250, 255);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: 0 0 0 0;
+}
