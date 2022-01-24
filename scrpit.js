@@ -9,9 +9,11 @@ const background = document.getElementById("container");
 const submit = document.getElementById("submit");
 const temp = document.getElementById("temps");
 // const api = document.getElementById("api");
-const apiKey = "42f6f9851217d7e7ea387a5223db02c3";
+const apiKey = "75f6221832637aea6d5ddb93f09fa813";
 
 // function on inputs
+
+// &appid={API key}
 
 input.addEventListener("keyup", getcity);
 function getcity() {
@@ -23,11 +25,25 @@ submit.addEventListener("click", handleClick);
 function handleClick(e) {
   e.preventDefault();
 
-  fetch(`api.openweathermap.org/data/2.5/weather?q=${input.value.trim()}`)
+  fetch(
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
+      input.value +
+      "&units=metric" +
+      "&appid=f3e6a40e7d873f042984b1405049f14e"
+  )
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      var citymin = data["main"]["temp_min"];
+      var citymax = data["main"]["temp_max"];
+      var cityavg = data["main"]["temp"];
 
-  // .catch((err) => alert("wrong city Name"));
+      avgTemp.innerHTML = cityavg + " C";
+      minTemp.innerHTML = citymin + " C";
+      maxTemp.innerHTML = citymax + " C";
+      console.log(data);
+    })
+
+    .catch((err) => alert("wrong city Name"));
 }
 
 var x = setInterval(function () {
