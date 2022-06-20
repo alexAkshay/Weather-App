@@ -1,22 +1,23 @@
-/* #container {
+*{
+  margin: 0%;
+  box-sizing: border-box;
+
+}
+#container {
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  /* background-image: url("./pexels-reynaldo-brigworkz-brigantty-771883\ \(1\).jpg");
-  color: rgb(249, 250, 255); */
-/* margin: 0 0 0 0; */
-/* } */
-#time {
-  width: 20vw;
-  height: 10vh;
+  color: rgb(249, 250, 255); 
+margin: 0 0 0 0;
+ }
+#time #date {
+  width: 5vw;
+  height: 5vh;
   position: relative;
   margin: 25px 0 0 200px;
   font-size: 2rem;
-
   font-weight: bold;
-  /* color: indianred; */
+ 
 }
-
 #city {
   width: 70vw;
   height: 10vh;
@@ -63,14 +64,14 @@ button {
   background-color: darkred;
 }
 
-/* .datTime {
-  background-image: url("./day.jpg");
+.datTime {
+  background-image: url("./Daytime.jpg");
   color: rgb(8, 23, 233);
   width: 100vw;
   height: 100vh;
   position: fixed;
   margin: 0 0 0 0;
-} */
+}
 .nightTime {
   background-image: url("./pexels-francesco-ungaro-998641.jpg");
   color: crimson;
